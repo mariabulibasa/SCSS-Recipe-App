@@ -1,0 +1,26 @@
+.filters {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--text);
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:not(.filter-btn--active):hover {
+    background: var(--accent-soft);
+  }
+
+  &--active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+  }
+}
