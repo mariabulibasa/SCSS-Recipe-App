@@ -168,8 +168,6 @@ src/styles/\_filters.scss
 
 ## 3. Identify and describe three cases where this step-by-step mapping becomes ambiguous, indirect, or breaks down
 
-## Cases Where the Mapping Becomes Ambiguous or Indirect
-
 1. **CSS Variables**
 
 Some properties use CSS variables, such as `var(--primary)`. In DevTools, the Computed panel shows the final resolved value (for example `#F59E0B`), but the original source only contains the variable reference. To understand where the value comes from, it must be traced back to the variable definition in another file (`_variables.scss`). This makes the mapping indirect.
